@@ -14,6 +14,8 @@ namespace TeamLeaf.CameraControls
         [Header("References")]
         [SerializeField] private Transform trackedObject;
         [SerializeField] private Transform cameraPivot;
+
+        [SerializeField] private Vector3 debugEulers;
         
         private Camera cam;
         private Camera Cam
@@ -23,6 +25,12 @@ namespace TeamLeaf.CameraControls
                 if (cam == null) cam = Camera.main;
                 return cam;
             }
+        }
+
+        private void Start()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         // Update is called once per frame
@@ -42,7 +50,18 @@ namespace TeamLeaf.CameraControls
 
         private void RotateCamera(float x, float y)
         {
-            cameraPivot.Rotate(new Vector3(y * moveSpeed.y, x * moveSpeed.x, 0), Space.Self);
+            //cameraPivot.Rotate(new Vector3(y * -moveSpeed.y, x * moveSpeed.x, 0), Space.Self);
+
+            Vector3 targetRot = cameraPivot.localEulerAngles;
+            targetRot.x += (y * -moveSpeed.y);
+            targetRot.y += (x * moveSpeed.x);
+
+            targetRot.x = targetRot.x > 180f ? targetRot.x - 360f : targetRot.x;
+
+            debugEulers = targetRot;
+            if (targetRot.x > maxBoomAngle) targetRot.x = maxBoomAngle;
+            if (targetRot.x < minBoomAngle) targetRot.x = minBoomAngle;
+            cameraPivot.rotation = Quaternion.Euler(targetRot);
         }
     }
 }
