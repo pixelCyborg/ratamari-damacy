@@ -7,12 +7,16 @@ public class PlayerControls : MonoBehaviour
     [SerializeField]
     private float speed = 10f;
 
+    [SerializeField]
+    private float angularVelocityMax = 100f;
+
     private Rigidbody body;
     private Camera cam;
 
     private void Start()
     {
         body = GetComponent<Rigidbody>();
+        body.maxAngularVelocity = angularVelocityMax;
         cam = Camera.main;
     }
 
@@ -32,6 +36,11 @@ public class PlayerControls : MonoBehaviour
         torque += cam.transform.forward * -x;
         torque += cam.transform.right * y;
 
-        body.AddTorque(torque * speed, ForceMode.Force);
+        body.AddTorque(torque.normalized * speed, ForceMode.Force);
+    }
+
+    public void AddSpeed(float change)
+    {
+        speed += change;
     }
 }
