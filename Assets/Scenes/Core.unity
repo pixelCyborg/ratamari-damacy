@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1612247453}
-  height: 0.15
+  height: -0.35
   offset: 0.45
 --- !u!1001 &427170910
 PrefabInstance:
