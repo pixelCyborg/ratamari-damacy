@@ -10,28 +10,34 @@ public class WaterBody : MonoBehaviour
     [SerializeField] private float evaporationRate = 0.01f;
     [SerializeField] private float minWaterLevel = 0.01f;
     // controls how often water evaporates
-    [SerializeField] private float evapTimeStep = 1.0f;
+    [SerializeField] private float evapTimeStep = 5.0f;
     private bool drained = false;
 
     // Start is called before the first frame update
     void Start()
     {
         // evaporation begins 1s after Start()
-        if (enableEvaporate) InvokeRepeating("EvaporateWater", 1.0f, evapTimeStep);
+        if (enableEvaporate) InvokeRepeating("Evaporation", 1.0f, evapTimeStep);
     }
 
-    void EvaporateWater() 
+    void Evaporation() 
     {
-        // decrease water level until it can't be decreased past the minimum
-        if (waterLevel > minWaterLevel) 
+        if (!drained) RemoveWater(evaporationRate);
+    }
+
+    void RemoveWater(float drainAmount) {
+
+        if ((waterLevel - drainAmount) > minWaterLevel) 
         {
-            waterLevel -= evaporationRate;
-            transform.localScale -= new Vector3(0f, evaporationRate, 0f);
-        } 
+            waterLevel -= drainAmount;
+            transform.localScale -= new Vector3(0f, drainAmount, 0f);
+        }
         else 
         {
             drained = true;
-            // would it be awful if I just... CancelInvoke('EvaporateWater')
+            CancelInvoke("Evaporation");
+            Debug.Log("All water gone");
+            Destroy(gameObject);
         }
     }
 
@@ -53,4 +59,17 @@ public class WaterBody : MonoBehaviour
 
      }
      */
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            // is it expensive to put this here? probably
+            PlayerControls playerControls = other.GetComponent<PlayerControls>();
+            if (!drained) 
+            {
+                RemoveWater(playerControls.waterAbsorbAmount);
+                playerControls.AddMass(0.01f);
+            }
+        }
+    }
 }
