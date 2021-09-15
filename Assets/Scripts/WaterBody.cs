@@ -64,11 +64,11 @@ public class WaterBody : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             // is it expensive to put this here? probably
-            PlayerControls playerControls = other.GetComponent<PlayerControls>();
+            PlayerManager player = other.GetComponent<PlayerManager>();
             if (!drained) 
             {
-                RemoveWater(playerControls.waterAbsorbAmount);
-                playerControls.AddMass(0.01f);
+                RemoveWater(player.waterAbsorbAmount);
+                player.AddMass(0.01f);
             }
         }
     }

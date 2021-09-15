@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerRats : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] float height = 0.5f;
-    [SerializeField] float offset = 1f;
+    private float height = 0.5f;
+    private float offset = 1f;
 
     private SphereCollider playerSphere;
     private Rigidbody playerBody;
@@ -30,6 +30,9 @@ public class PlayerRats : MonoBehaviour
     {
         if (playerBody.velocity.magnitude > 0.01f)
         {
+            offset = playerSphere.radius * 0.65f;
+            height = -playerSphere.radius * 0.75f;
+
             Vector3 vel = playerBody.velocity.normalized;
             Vector3 targetPos = playerBody.transform.position - vel * offset;
             targetPos.y = player.position.y + height;

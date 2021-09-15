@@ -9,7 +9,6 @@ public class PlayerControls : MonoBehaviour
 
     [SerializeField]
     private float angularVelocityMax = 100f;
-    public float waterAbsorbAmount = 0.01f;
 
     private Rigidbody body;
     private Camera cam;
@@ -43,10 +42,5 @@ public class PlayerControls : MonoBehaviour
     public void AddSpeed(float change)
     {
         speed += change;
-    }
-
-    public void AddMass(float amount)
-    {
-        gameObject.transform.localScale += new Vector3(amount, amount, amount);
     }
 }

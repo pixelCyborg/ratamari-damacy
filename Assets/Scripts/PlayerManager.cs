@@ -6,8 +6,14 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
 
+    [SerializeField] private GameObject visual;
+
+    public float waterAbsorbAmount = 0.01f;
+
     private PlayerControls controls;
     private int ratCount;
+    private Rigidbody body;
+    private SphereCollider col;
 
     public int RatCount
     {
@@ -19,6 +25,8 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        col = GetComponent<SphereCollider>();
+        body = GetComponent<Rigidbody>();
         controls = GetComponentInChildren<PlayerControls>();
         Instance = this;
         ratCount = 1;
@@ -44,8 +52,10 @@ public class PlayerManager : MonoBehaviour
         ratCount += rats;
     }
 
-    public void AddMass(float massDelta)
+    public void AddMass(float amount)
     {
-
+        visual.transform.localScale += new Vector3(amount, amount, amount);
+        body.mass += amount * 10f;
+        col.radius += amount * 0.5f;
     }
 }
