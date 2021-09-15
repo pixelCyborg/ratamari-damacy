@@ -34,7 +34,7 @@ public class RatPickup : MonoBehaviour
             PlayerManager.Instance.AddRats(rats);
             pickedUp = true;
             playerTransform = other.transform;
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Rats/Rat Start", transform.position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Rats/Rat Pickup", transform.position);
         }
     }
 }

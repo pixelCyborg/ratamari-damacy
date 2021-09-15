@@ -17,7 +17,7 @@ MonoBehaviour:
   lastModified: 637669851014327515
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7845086971725146648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,8 +50,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Rats/Rat Start
   guid: ec497a0545767248a4304e78a346f73a
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 217
+--- !u!114 &-5671533243132941193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637670544051849406
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4788640616535558587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rats/Rat Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Rats/Rat Pickup
+  guid: ec497a0545767248a4304e78a346f73a
   Banks:
-  - {fileID: -8802641771977823239}
+  - {fileID: 2729256551864362304}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -95,6 +135,48 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3720929272406233530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pumpkin/Rolling
+  m_EditorClassIdentifier: 
+  Path: event:/Pumpkin/Rolling
+  guid: 34157440e8aa1d4884e23b84d6762c2d
+  Banks:
+  - {fileID: 2729256551864362304}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1431273029436828444}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19882
+--- !u!114 &-2688519209584179220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637671469061206533
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,16 +191,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2194751617079506489}
-  - {fileID: -8802641771977823239}
+  - {fileID: 2729256551864362304}
   EditorEvents:
-  - {fileID: -7511880264185307513}
+  - {fileID: -4788640616535558587}
+  - {fileID: -3720929272406233530}
+  - {fileID: 1493018376654875251}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8802641771977823239}
+  - {fileID: 2729256551864362304}
   StringsBanks:
   - {fileID: 2194751617079506489}
-  stringsBankWriteTime: 637669851014347532
+  stringsBankWriteTime: 637671470013717965
   cacheVersion: 3
+--- !u!114 &35278238562348086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rolling/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 500
+  Default: 0
+  Exists: 0
+--- !u!114 &1431273029436828444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rolling/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 500
+  Default: 0
+  Exists: 1
+--- !u!114 &1493018376654875251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rats/Rat Start
+  m_EditorClassIdentifier: 
+  Path: event:/Rats/Rat Start
+  guid: 8b14aaa167e11f42b7be12c25c4d5736
+  Banks:
+  - {fileID: 2729256551864362304}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2194751617079506489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,11 +274,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Ratamari FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637669851014347532
+  lastModified: 637671470013717965
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 740
+    Value: 894
+  Exists: 1
+--- !u!114 &2476045620423222468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rolling/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 500
+  Default: 0
+  Exists: 0
+--- !u!114 &2729256551864362304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637671470013707953
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &4118421887210785710
 MonoBehaviour:
@@ -159,3 +335,56 @@ MonoBehaviour:
   - Name: Desktop
     Value: 688
   Exists: 1
+--- !u!114 &5505079047421361956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637671469367035036
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8960978704402738597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637670615993289641
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &9196905814659887512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rolling/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 500
+  Default: 0
+  Exists: 0
