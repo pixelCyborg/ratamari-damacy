@@ -18,11 +18,13 @@ public class WaterBody : MonoBehaviour
     {
         // evaporation begins 1s after Start()
         if (enableEvaporate) InvokeRepeating("Evaporation", 1.0f, evapTimeStep);
+
     }
 
     void Evaporation() 
     {
         if (!drained) RemoveWater(evaporationRate);
+       
     }
 
     void RemoveWater(float drainAmount) {
@@ -31,6 +33,7 @@ public class WaterBody : MonoBehaviour
         {
             waterLevel -= drainAmount;
             transform.localScale -= new Vector3(0f, drainAmount, 0f);
+            
         }
         else 
         {
@@ -69,6 +72,7 @@ public class WaterBody : MonoBehaviour
             {
                 RemoveWater(player.waterAbsorbAmount);
                 player.AddMass(0.01f);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Pumpkin/Growth", transform.position);
             }
         }
     }
