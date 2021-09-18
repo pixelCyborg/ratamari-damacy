@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
+    public static float CurrentSpeed;
+    [SerializeField] private float debugCurrentSpeed;
+
     [SerializeField]
     private float speed = 10f;
 
@@ -24,9 +27,15 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(body != null)
+        {
+            CurrentSpeed = body.angularVelocity.magnitude;
+            debugCurrentSpeed = CurrentSpeed;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-
+        
         Move(x, y);
     }
 

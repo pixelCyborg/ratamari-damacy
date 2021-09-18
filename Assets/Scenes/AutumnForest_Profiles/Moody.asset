@@ -65,7 +65,7 @@ MonoBehaviour:
     value: 2
   saturation:
     overrideState: 1
-    value: 15
+    value: 47
   brightness:
     overrideState: 0
     value: 0
@@ -1345,7 +1345,7 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 270
+    value: 271
   sampleCount:
     overrideState: 1
     value: 10
