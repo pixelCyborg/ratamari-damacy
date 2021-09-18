@@ -14,9 +14,13 @@ namespace TeamLeaf.CameraControls
         [Header("References")]
         [SerializeField] private Transform trackedObject;
         [SerializeField] private Transform cameraPivot;
+        [SerializeField] private SphereCollider playerSphere;
 
         [SerializeField] private Vector3 debugEulers;
-        
+
+        private float origOffsetLength;
+        private float origSphereRadius;
+
         private Camera cam;
         private Camera Cam
         {
@@ -31,6 +35,9 @@ namespace TeamLeaf.CameraControls
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
+            origSphereRadius = playerSphere.radius;
+            origOffsetLength = Cam.transform.localPosition.z;
         }
 
         // Update is called once per frame
@@ -41,6 +48,8 @@ namespace TeamLeaf.CameraControls
 
             RotateCamera(x, y);
             transform.position = trackedObject.position;
+
+            LengthenOffset();
         }
 
         private void LateUpdate()
@@ -62,6 +71,16 @@ namespace TeamLeaf.CameraControls
             if (targetRot.x > maxBoomAngle) targetRot.x = maxBoomAngle;
             if (targetRot.x < minBoomAngle) targetRot.x = minBoomAngle;
             cameraPivot.rotation = Quaternion.Euler(targetRot);
+        }
+
+        private void LengthenOffset()
+        {
+            float currentOffset = origOffsetLength * (playerSphere.radius / origSphereRadius);
+
+            Vector3 localOffset = Cam.transform.localPosition;
+            localOffset.z = currentOffset;
+
+            Cam.transform.localPosition = localOffset;
         }
     }
 }

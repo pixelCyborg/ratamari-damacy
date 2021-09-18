@@ -28,20 +28,19 @@ public class PlayerRats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerBody.velocity.magnitude > 0.01f)
-        {
-            offset = playerSphere.radius * 0.65f;
-            height = -playerSphere.radius * 0.75f;
+        offset = playerSphere.radius * 0.7f;
+        height = -playerSphere.radius * 0.75f;
 
-            Vector3 vel = playerBody.velocity.normalized;
-            Vector3 targetPos = playerBody.transform.position - vel * offset;
-            targetPos.y = player.position.y + height;
+        Vector3 vel = playerBody.velocity.normalized;
+        if (vel == Vector3.zero) vel = playerBody.transform.forward;
 
-            Vector3 lookAt = playerBody.position;
-            lookAt.y = transform.position.y;
+        Vector3 targetPos = playerBody.transform.position - vel * offset;
+        targetPos.y = player.position.y + height;
 
-            transform.position = targetPos;
-            transform.LookAt(lookAt);
-        }
+        Vector3 lookAt = playerBody.position;
+        lookAt.y = transform.position.y;
+
+        transform.position = targetPos;
+        transform.LookAt(lookAt);
     }
 }

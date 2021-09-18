@@ -35,27 +35,27 @@ public class PlayerManager : MonoBehaviour
     private void Update()
     {
         //Debug controls
-        if(Input.GetKeyDown(KeyCode.Plus))
+        if(Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals))
         {
-            AddMass(5f);
+            AddMass(0.1f);
         }
 
         if(Input.GetKeyDown(KeyCode.Minus))
         {
-            AddMass(-5f);
+            AddMass(-0.1f);
         }
     }
 
     public void AddRats(int rats)
     {
-        controls.AddSpeed(rats * 0.25f);
+        controls.AddSpeed(rats * 5f);
         ratCount += rats;
     }
 
     public void AddMass(float amount)
     {
         visual.transform.localScale += new Vector3(amount, amount, amount);
-        body.mass += amount * 10f;
+        body.mass += amount;
         col.radius += amount * 0.5f;
     }
 }
