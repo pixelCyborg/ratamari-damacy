@@ -45,7 +45,7 @@ public class PlayerControls : MonoBehaviour
         torque += cam.transform.forward * -x;
         torque += cam.transform.right * y;
 
-        body.AddTorque(torque.normalized * speed, ForceMode.Force);
+        body.AddTorque(torque.normalized * speed * (Time.deltaTime * 50f), ForceMode.Force);
     }
 
     public void AddSpeed(float change)

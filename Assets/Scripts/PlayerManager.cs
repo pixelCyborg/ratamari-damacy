@@ -55,7 +55,7 @@ public class PlayerManager : MonoBehaviour
     public void AddMass(float amount)
     {
         visual.transform.localScale += new Vector3(amount, amount, amount);
-        body.mass += amount;
+        body.mass += amount * 10f;
         col.radius += amount * 0.5f;
     }
 }
