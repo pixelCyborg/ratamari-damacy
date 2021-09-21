@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambience/Forest
+  Event: event:/Menu Music
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1

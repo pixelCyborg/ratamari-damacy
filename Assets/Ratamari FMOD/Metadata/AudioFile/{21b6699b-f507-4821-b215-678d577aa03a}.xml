@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{21b6699b-f507-4821-b215-678d577aa03a}">
+		<property name="assetPath">
+			<value>UI Taps-001.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.08120181405895692</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2a229330-80cc-422a-b025-2d423312c6ac}</destination>
+		</relationship>
+	</object>
+</objects>

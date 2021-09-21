@@ -60,15 +60,18 @@ public class IngameMenu : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene(0);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui Click", transform.position);
     }
 
     public void Quit()
     {
         Application.Quit();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui Click", transform.position);
     }
 
     public bool Paused()
     {
         return showing;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui Click", transform.position);
     }
 }

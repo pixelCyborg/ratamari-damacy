@@ -8,10 +8,12 @@ public class MainMenu : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene(1);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui Click", transform.position);
     }
 
     public void Quit()
     {
         Application.Quit();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui Click", transform.position);
     }
 }
