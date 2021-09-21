@@ -43,6 +43,8 @@ namespace TeamLeaf.CameraControls
         // Update is called once per frame
         void Update()
         {
+            if (IngameMenu.Instance.Paused()) return;
+
             float x = Input.GetAxis("Mouse X");
             float y = Input.GetAxis("Mouse Y");
 

@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9043405175114547285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pumpkin/Collide
+  m_EditorClassIdentifier: 
+  Path: event:/Pumpkin/Collide
+  guid: 5509add4caa30d42a5b03fc614d7406f
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8982007654602375948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/DaytimeMusic
+  m_EditorClassIdentifier: 
+  Name: DaytimeMusic
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8802641771977823239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,6 +58,46 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8642495544599611600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/DaytimeMusic
+  m_EditorClassIdentifier: 
+  Name: DaytimeMusic
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8453661690504129621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Menu Music
+  guid: 2a7dac0374e27747a6c2292b6a84f95d
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87272
 --- !u!114 &-8449907916621876732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +208,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 217
+--- !u!114 &-7422967048649427982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Menu Music
+  guid: 2a7dac0374e27747a6c2292b6a84f95d
+  Banks:
+  - {fileID: 4585940052413842772}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87272
 --- !u!114 &-6891386860232157399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +248,43 @@ MonoBehaviour:
   Max: 500
   Default: 0
   Exists: 0
+--- !u!114 &-6339416766548085234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Ratamari FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637677578682406244
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1382
+  Exists: 1
+--- !u!114 &-6327317418208153636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/DaytimeMusic
+  m_EditorClassIdentifier: 
+  Name: DaytimeMusic
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-6294495018881612023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +300,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Growth
   guid: f9423c98230aaf409787de01291707ed
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -168,6 +308,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6147237472353657472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pumpkin/Rolling
+  m_EditorClassIdentifier: 
+  Path: event:/Pumpkin/Rolling
+  guid: 34157440e8aa1d4884e23b84d6762c2d
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14276
+--- !u!114 &-5707802920420764603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &-5671533243132941193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +366,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4989392800115032655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677477480862464
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-4788640616535558587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +399,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Pickup
   guid: ec497a0545767248a4304e78a346f73a
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -209,6 +407,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 217
+--- !u!114 &-4506904453869501941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &-4352367107121017844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +442,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4149461566415966025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game Start
+  m_EditorClassIdentifier: 
+  Path: event:/Game Start
+  guid: 4e3881c3a771dc4b9c935947ec22076e
+  Banks:
+  - {fileID: 4585940052413842772}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2321
 --- !u!114 &-3959035535921354283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,15 +516,79 @@ MonoBehaviour:
   Path: event:/Pumpkin/Rolling
   guid: 34157440e8aa1d4884e23b84d6762c2d
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
-  Parameters:
-  - {fileID: -2171356554194357361}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 14276
+--- !u!114 &-3600378088411266112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Forest
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Forest
+  guid: 51b508541d36b844a0883d306db58ee6
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4459376540798375056}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 20366
+--- !u!114 &-3520723396379231320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game Start
+  m_EditorClassIdentifier: 
+  Path: event:/Game Start
+  guid: 4e3881c3a771dc4b9c935947ec22076e
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2321
+--- !u!114 &-3101171890328122636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677482682168586
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2688519209584179220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +658,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
-  Exists: 1
+  Exists: 0
+--- !u!114 &-2240260310676402191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677448569493199
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2171356554194357361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +693,7 @@ MonoBehaviour:
   Min: 0
   Max: 500
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2063855957734144500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,15 +744,56 @@ MonoBehaviour:
   Path: event:/Ambience/Forest
   guid: 51b508541d36b844a0883d306db58ee6
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -2315401955774006564}
+  - {fileID: 2447627091590881894}
   MinDistance: 0
   MaxDistance: 0
   Length: 20366
+--- !u!114 &-1539378623762150116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: 240af03d9f37ae4cb326ef254d2e54e1
+  Banks:
+  - {fileID: 4585940052413842772}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 85728743000714174}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 195000
+--- !u!114 &-836115815432133855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
+  m_EditorClassIdentifier: 
+  Name: Rat Count
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,22 +807,26 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 2194751617079506489}
-  - {fileID: 5611853208525509415}
+  - {fileID: -6339416766548085234}
+  - {fileID: 2147415455198231159}
   EditorEvents:
-  - {fileID: -4788640616535558587}
-  - {fileID: -3720929272406233530}
-  - {fileID: 1493018376654875251}
-  - {fileID: -1557127170248234939}
-  - {fileID: 619392098422093462}
-  - {fileID: -6294495018881612023}
-  - {fileID: 1172391414882517960}
+  - {fileID: 2534853186519843156}
+  - {fileID: 5643504361460655530}
+  - {fileID: -8453661690504129621}
+  - {fileID: -6147237472353657472}
+  - {fileID: -3520723396379231320}
+  - {fileID: -3600378088411266112}
+  - {fileID: -9043405175114547285}
+  - {fileID: 7332825919988257907}
+  - {fileID: 3908988878414267916}
+  - {fileID: 7091043603446294799}
+  - {fileID: 463164402800477007}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 2147415455198231159}
   StringsBanks:
-  - {fileID: 2194751617079506489}
-  stringsBankWriteTime: 637674228705669880
+  - {fileID: -6339416766548085234}
+  stringsBankWriteTime: 637677578682406244
   cacheVersion: 3
 --- !u!114 &35278238562348086
 MonoBehaviour:
@@ -480,6 +845,46 @@ MonoBehaviour:
   Max: 500
   Default: 0
   Exists: 0
+--- !u!114 &85728743000714174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/DaytimeMusic
+  m_EditorClassIdentifier: 
+  Name: DaytimeMusic
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &463164402800477007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rats/Rat Growth
+  m_EditorClassIdentifier: 
+  Path: event:/Rats/Rat Growth
+  guid: f9423c98230aaf409787de01291707ed
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &619392098422093462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +900,7 @@ MonoBehaviour:
   Path: event:/Pumpkin/Collide
   guid: 5509add4caa30d42a5b03fc614d7406f
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -519,6 +924,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+  Exists: 0
+--- !u!114 &927853275386867997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677474704505857
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &1046008396708262323
 MonoBehaviour:
@@ -552,7 +975,7 @@ MonoBehaviour:
   Path: event:/Pumpkin/Growth
   guid: 83684e789974464e80d62ef670260b79
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -560,6 +983,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4129
+--- !u!114 &1254227502223630177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
 --- !u!114 &1431273029436828444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +1032,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Start
   guid: 8b14aaa167e11f42b7be12c25c4d5736
   Banks:
-  - {fileID: 5611853208525509415}
+  - {fileID: 4585940052413842772}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -635,6 +1075,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2147415455198231159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677578708910287
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2194751617079506489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,11 +1107,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Ratamari FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637674228705669880
+  lastModified: 637677500901436211
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1114
+    Value: 1382
+  Exists: 1
+--- !u!114 &2423531187426818480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677449732618038
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2447627091590881894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
   Exists: 1
 --- !u!114 &2476045620423222468
 MonoBehaviour:
@@ -672,6 +1165,64 @@ MonoBehaviour:
   Max: 500
   Default: 0
   Exists: 0
+--- !u!114 &2504596942483008836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &2534853186519843156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music Night
+  m_EditorClassIdentifier: 
+  Path: event:/Music Night
+  guid: 183cbd162dd02444b81dd539141187c4
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 195156
+--- !u!114 &2576021418058696551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677449333280071
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2729256551864362304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,6 +1258,23 @@ MonoBehaviour:
   Max: 500
   Default: 0
   Exists: 0
+--- !u!114 &3168490016745377518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
+  m_EditorClassIdentifier: 
+  Name: Rat Count
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
 --- !u!114 &3186280467132135933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +1288,23 @@ MonoBehaviour:
   m_Name: parameter:/Forest/Daytime
   m_EditorClassIdentifier: 
   Name: Daytime
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &3700265479910407554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
   Min: 0
   Max: 1
   Default: 1
@@ -741,6 +1326,29 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
+--- !u!114 &3908988878414267916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rats/Rat Start
+  m_EditorClassIdentifier: 
+  Path: event:/Rats/Rat Start
+  guid: 8b14aaa167e11f42b7be12c25c4d5736
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 939
 --- !u!114 &4118421887210785710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +1369,98 @@ MonoBehaviour:
   - Name: Desktop
     Value: 688
   Exists: 1
+--- !u!114 &4229868471487140699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &4459376540798375056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &4585940052413842772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677500901416197
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &4624327088849509098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
+  m_EditorClassIdentifier: 
+  Name: Rat Count
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &4677712260711152615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music Night
+  m_EditorClassIdentifier: 
+  Path: event:/Music Night
+  guid: 183cbd162dd02444b81dd539141187c4
+  Banks:
+  - {fileID: 4585940052413842772}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 195156
 --- !u!114 &5326891711523282218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +1476,23 @@ MonoBehaviour:
   Name: Speed
   Min: 0
   Max: 500
+  Default: 0
+  Exists: 0
+--- !u!114 &5355971370967310970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
+  m_EditorClassIdentifier: 
+  Name: Rat Count
+  Min: 0
+  Max: 5
   Default: 0
   Exists: 0
 --- !u!114 &5505079047421361956
@@ -813,7 +1530,66 @@ MonoBehaviour:
   lastModified: 637674228705649854
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &5643504361460655530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: 240af03d9f37ae4cb326ef254d2e54e1
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6327317418208153636}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 195000
+--- !u!114 &5834115808246156562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
+  m_EditorClassIdentifier: 
+  Name: Rat Count
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &6062272770149974116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637677500901416197
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6236198223119886633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,6 +1607,69 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
+--- !u!114 &6249171836553018960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest/DaytimeAMB
+  m_EditorClassIdentifier: 
+  Name: DaytimeAMB
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
+--- !u!114 &7091043603446294799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rats/Rat Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Rats/Rat Pickup
+  guid: ec497a0545767248a4304e78a346f73a
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 217
+--- !u!114 &7332825919988257907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pumpkin/Growth
+  m_EditorClassIdentifier: 
+  Path: event:/Pumpkin/Growth
+  guid: 83684e789974464e80d62ef670260b79
+  Banks:
+  - {fileID: 2147415455198231159}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4129
 --- !u!114 &8245990596309261867
 MonoBehaviour:
   m_ObjectHideFlags: 0

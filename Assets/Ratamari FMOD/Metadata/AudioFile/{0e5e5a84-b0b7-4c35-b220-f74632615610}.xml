@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{0e5e5a84-b0b7-4c35-b220-f74632615610}">
+		<property name="assetPath">
+			<value>Rat/retro_mouse_critter_squeak_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.21768707482993196</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2a229330-80cc-422a-b025-2d423312c6ac}</destination>
+		</relationship>
+	</object>
+</objects>

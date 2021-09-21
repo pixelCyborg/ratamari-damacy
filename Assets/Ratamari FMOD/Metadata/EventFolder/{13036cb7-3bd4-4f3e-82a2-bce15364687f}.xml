@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{13036cb7-3bd4-4f3e-82a2-bce15364687f}">
+		<property name="name">
+			<value>Pumpkin</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a8057784-6f06-4aef-93e7-3f3c2bdf2724}</destination>
+		</relationship>
+	</object>
+</objects>

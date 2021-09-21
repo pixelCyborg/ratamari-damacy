@@ -1484,11 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winMass: 60
---- !u!135 &1626315604 stripped
-SphereCollider:
-  m_CorrespondingSourceObject: {fileID: 1855332372911630384, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
-  m_PrefabInstance: {fileID: 2110266056}
-  m_PrefabAsset: {fileID: 0}
+  body: {fileID: 0}
 --- !u!1001 &1636960881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1743,10 +1739,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1855332374398571666, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
-      propertyPath: playerSphere
-      value: 
-      objectReference: {fileID: 1626315604}
     - target: {fileID: 3237380835131135885, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1795,27 +1787,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core Components
       objectReference: {fileID: 0}
-    - target: {fileID: 7077126167182506461, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
---- !u!1 &2110266057 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1855332373837640923, guid: 7911d32cc0457074a8b952df8e04688f, type: 3}
-  m_PrefabInstance: {fileID: 2110266056}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2110266058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110266057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545568d0d04e8734e8c07535254b2262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  depthTextureMode: 1

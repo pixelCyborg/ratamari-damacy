@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Ratamari FMOD/Ratamari FMOD.fspro
-  sourceBankPath: Ratamari FMOD\Build
+  sourceProjectPath: Assets/Ratamari FMOD/Ratamari FMOD.fspro
+  sourceBankPath: Assets\Ratamari FMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -76,7 +76,8 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264

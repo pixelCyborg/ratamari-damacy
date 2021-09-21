@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{df42a8ae-6930-46d9-96f1-36e3d1d93a99}">
+		<property name="name">
+			<value>DaytimeAMB</value>
+		</property>
+		<relationship name="folder">
+			<destination>{949bba39-b74d-4335-abd3-58db13e3a419}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a437be35-6ad2-4715-9f74-7f33d1a8c149}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a437be35-6ad2-4715-9f74-7f33d1a8c149}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>25</value>
+		</property>
+	</object>
+</objects>
