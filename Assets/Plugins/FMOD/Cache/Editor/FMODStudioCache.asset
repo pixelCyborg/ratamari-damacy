@@ -248,27 +248,7 @@ MonoBehaviour:
   Max: 500
   Default: 0
   Exists: 0
---- !u!114 &-6339416766548085234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Ratamari FMOD/Build/Desktop/Master.strings.bank
-  SubDir: 
-  lastModified: 637677578682406244
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1382
-  Exists: 1
---- !u!114 &-6327317418208153636
+--- !u!114 &-6729037988481069305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,12 +258,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/DaytimeMusic
+  m_Name: parameter:/Forest/Daytime
   m_EditorClassIdentifier: 
-  Name: DaytimeMusic
+  Name: Daytime
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   Exists: 1
 --- !u!114 &-6294495018881612023
 MonoBehaviour:
@@ -300,7 +280,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Growth
   guid: f9423c98230aaf409787de01291707ed
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -399,7 +379,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Pickup
   guid: ec497a0545767248a4304e78a346f73a
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -516,7 +496,7 @@ MonoBehaviour:
   Path: event:/Pumpkin/Rolling
   guid: 34157440e8aa1d4884e23b84d6762c2d
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -524,7 +504,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14276
---- !u!114 &-3600378088411266112
+--- !u!114 &-3355775023741941081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,62 +513,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Forest
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Rat Count
   m_EditorClassIdentifier: 
-  Path: event:/Ambience/Forest
-  guid: 51b508541d36b844a0883d306db58ee6
-  Banks:
-  - {fileID: 2147415455198231159}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 4459376540798375056}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 20366
---- !u!114 &-3520723396379231320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Game Start
-  m_EditorClassIdentifier: 
-  Path: event:/Game Start
-  guid: 4e3881c3a771dc4b9c935947ec22076e
-  Banks:
-  - {fileID: 2147415455198231159}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2321
---- !u!114 &-3101171890328122636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Ratamari FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637677482682168586
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
+  Name: Rat Count
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
 --- !u!114 &-2688519209584179220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,12 +676,12 @@ MonoBehaviour:
   Path: event:/Ambience/Forest
   guid: 51b508541d36b844a0883d306db58ee6
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 2447627091590881894}
+  - {fileID: -6729037988481069305}
   MinDistance: 0
   MaxDistance: 0
   Length: 20366
@@ -806,27 +738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -6339416766548085234}
-  - {fileID: 2147415455198231159}
-  EditorEvents:
-  - {fileID: 2534853186519843156}
-  - {fileID: 5643504361460655530}
-  - {fileID: -8453661690504129621}
-  - {fileID: -6147237472353657472}
-  - {fileID: -3520723396379231320}
-  - {fileID: -3600378088411266112}
-  - {fileID: -9043405175114547285}
-  - {fileID: 7332825919988257907}
-  - {fileID: 3908988878414267916}
-  - {fileID: 7091043603446294799}
-  - {fileID: 463164402800477007}
+  EditorBanks: []
+  EditorEvents: []
   EditorParameters: []
-  MasterBanks:
-  - {fileID: 2147415455198231159}
-  StringsBanks:
-  - {fileID: -6339416766548085234}
-  stringsBankWriteTime: 637677578682406244
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
   cacheVersion: 3
 --- !u!114 &35278238562348086
 MonoBehaviour:
@@ -900,7 +817,7 @@ MonoBehaviour:
   Path: event:/Pumpkin/Collide
   guid: 5509add4caa30d42a5b03fc614d7406f
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -975,7 +892,7 @@ MonoBehaviour:
   Path: event:/Pumpkin/Growth
   guid: 83684e789974464e80d62ef670260b79
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1032,7 +949,7 @@ MonoBehaviour:
   Path: event:/Rats/Rat Start
   guid: 8b14aaa167e11f42b7be12c25c4d5736
   Banks:
-  - {fileID: 4585940052413842772}
+  - {fileID: 3778853759786603860}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1107,46 +1024,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Ratamari FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637677500901436211
+  lastModified: 637676885686073303
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1382
-  Exists: 1
---- !u!114 &2423531187426818480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Ratamari FMOD/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637677449732618038
-  LoadResult: 0
-  FileSizes: []
-  Exists: 0
---- !u!114 &2447627091590881894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest/DaytimeAMB
-  m_EditorClassIdentifier: 
-  Name: DaytimeAMB
-  Min: 0
-  Max: 1
-  Default: 1
+    Value: 1230
   Exists: 1
 --- !u!114 &2476045620423222468
 MonoBehaviour:
@@ -1326,7 +1208,7 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
---- !u!114 &3908988878414267916
+--- !u!114 &3778853759786603860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1335,20 +1217,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Rats/Rat Start
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: event:/Rats/Rat Start
-  guid: 8b14aaa167e11f42b7be12c25c4d5736
-  Banks:
-  - {fileID: 2147415455198231159}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 939
+  Path: Ratamari FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637676885685490171
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4118421887210785710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1607,24 +1484,7 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
---- !u!114 &6249171836553018960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest/DaytimeAMB
-  m_EditorClassIdentifier: 
-  Name: DaytimeAMB
-  Min: 0
-  Max: 1
-  Default: 1
-  Exists: 0
---- !u!114 &7091043603446294799
+--- !u!114 &7348020565683104830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1634,42 +1494,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Rats/Rat Pickup
+  m_Name: event:/Music
   m_EditorClassIdentifier: 
-  Path: event:/Rats/Rat Pickup
-  guid: ec497a0545767248a4304e78a346f73a
+  Path: event:/Music
+  guid: 240af03d9f37ae4cb326ef254d2e54e1
   Banks:
-  - {fileID: 2147415455198231159}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  - {fileID: 3778853759786603860}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3355775023741941081}
   MinDistance: 0
   MaxDistance: 0
-  Length: 217
---- !u!114 &7332825919988257907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pumpkin/Growth
-  m_EditorClassIdentifier: 
-  Path: event:/Pumpkin/Growth
-  guid: 83684e789974464e80d62ef670260b79
-  Banks:
-  - {fileID: 2147415455198231159}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4129
+  Length: 195000
 --- !u!114 &8245990596309261867
 MonoBehaviour:
   m_ObjectHideFlags: 0
