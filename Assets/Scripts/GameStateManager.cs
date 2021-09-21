@@ -1,11 +1,54 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
+    [SerializeField] private float gameTime = 15f;
     [SerializeField] private float winMass = 60f;
     [SerializeField] Rigidbody body;
+    [SerializeField] Text timerText;
+
+    [SerializeField] GameObject winScreen;
+    [SerializeField] GameObject loseScreen;
+
+
+    private float currentTime;
+    private float origTime;
+    private bool gameWin = false;
+    private bool gameLose = false;
+
+    void Start()
+    {
+        origTime = Time.time;
+        winScreen.SetActive(false);
+        loseScreen.SetActive(false);
+    }
+
+    private void Update()
+    {
+        CheckPlayerMass();
+
+        if(currentTime <= 0f)
+        {
+            Lose();
+            return;
+        }
+
+        float timeElapsed = Time.time - origTime;
+        currentTime = gameTime - timeElapsed;
+        if (currentTime < 0f) currentTime = 0f;
+
+        if(timerText != null)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(currentTime);
+            string timeString = string.Format("{0:D2}:{1:D2}", t.Minutes, t.Seconds);
+            timerText.text = timeString;
+        }
+    }
 
     private void CheckPlayerMass()
     {
@@ -17,6 +60,25 @@ public class GameStateManager : MonoBehaviour
 
     private void Win()
     {
+        if (gameWin || gameLose) return;
+        gameWin = true;
+        winScreen.SetActive(true);
+    }
 
+    private void Lose()
+    {
+        if (gameWin || gameLose) return;
+        gameLose = true;
+        loseScreen.SetActive(true);
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
