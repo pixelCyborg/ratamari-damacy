@@ -7202,7 +7202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f021a0e6d1ccbe14a8fcfd268824c327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 15
+  gameTime: 600
   winMass: 60
   body: {fileID: 1855332372911630388}
   timerText: {fileID: 1882799215}

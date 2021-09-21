@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
-    [SerializeField] private float gameTime = 15f;
+    [SerializeField] private float gameTime = 600f;
     [SerializeField] private float winMass = 60f;
     [SerializeField] Rigidbody body;
     [SerializeField] Text timerText;
