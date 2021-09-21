@@ -16,7 +16,7 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] GameObject loseScreen;
 
 
-    private float currentTime;
+    [SerializeField] private float currentTime;
     private float origTime;
     private bool gameWin = false;
     private bool gameLose = false;
@@ -32,12 +32,6 @@ public class GameStateManager : MonoBehaviour
     {
         CheckPlayerMass();
 
-        if(currentTime <= 0f)
-        {
-            Lose();
-            return;
-        }
-
         float timeElapsed = Time.time - origTime;
         currentTime = gameTime - timeElapsed;
         if (currentTime < 0f) currentTime = 0f;
@@ -47,6 +41,12 @@ public class GameStateManager : MonoBehaviour
             TimeSpan t = TimeSpan.FromSeconds(currentTime);
             string timeString = string.Format("{0:D2}:{1:D2}", t.Minutes, t.Seconds);
             timerText.text = timeString;
+        }
+
+        if (currentTime <= 0f)
+        {
+            Lose();
+            return;
         }
     }
 
