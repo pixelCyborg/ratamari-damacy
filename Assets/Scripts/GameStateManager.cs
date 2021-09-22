@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameStateManager : MonoBehaviour
 {
+    public static GameStateManager instance;
     [SerializeField] private float gameTime = 600f;
     [SerializeField] private float winMass = 60f;
     [SerializeField] Rigidbody body;
@@ -14,6 +17,8 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] GameObject winScreen;
     [SerializeField] GameObject loseScreen;
+    private CanvasGroup winCanvasGroup;
+    private CanvasGroup loseCanvasGroup;
 
 
     [SerializeField] private float currentTime;
@@ -24,6 +29,12 @@ public class GameStateManager : MonoBehaviour
     void Start()
     {
         origTime = Time.time;
+
+        winCanvasGroup = winScreen.GetComponent<CanvasGroup>();
+        loseCanvasGroup = loseScreen.GetComponent<CanvasGroup>();
+        winCanvasGroup.alpha = 0f;
+        loseCanvasGroup.alpha = 0f;
+
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
     }
@@ -63,6 +74,11 @@ public class GameStateManager : MonoBehaviour
         if (gameWin || gameLose) return;
         gameWin = true;
         winScreen.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        winCanvasGroup.DOFade(1f, 3f);
     }
 
     private void Lose()
@@ -70,15 +86,27 @@ public class GameStateManager : MonoBehaviour
         if (gameWin || gameLose) return;
         gameLose = true;
         loseScreen.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        loseCanvasGroup.DOFade(1f, 3f);
     }
 
     public void LoadMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public bool GameEnded()
+    {
+        return gameLose || gameWin;
     }
 }
