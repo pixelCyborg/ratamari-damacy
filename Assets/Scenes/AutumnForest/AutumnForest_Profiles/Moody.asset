@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1370,10 +1370,10 @@ MonoBehaviour:
     value: 5
   aperture:
     overrideState: 1
-    value: 3
+    value: 23.5
   focalLength:
     overrideState: 1
-    value: 55
+    value: 123.9
   kernelSize:
     overrideState: 0
     value: 1

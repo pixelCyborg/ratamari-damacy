@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
 
     public void AddRats(int rats)
     {
-        controls.AddSpeed(rats * 5f);
+        controls.AddSpeed(rats * 50f);
         ratCount += rats;
     }
 

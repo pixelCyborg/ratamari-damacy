@@ -9,6 +9,11 @@ public class RatPickup : MonoBehaviour
     private float pickUpSpeed = 8f;
     Transform playerTransform;
 
+    private void Start()
+    {
+        transform.Rotate(new Vector3(0, Random.Range(-180, 180), 0));
+    }
+
     private void Update()
     {
         if (!pickedUp) return;

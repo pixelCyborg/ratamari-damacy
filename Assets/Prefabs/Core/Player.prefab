@@ -170,7 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee633c1e151f1da418c4cc288e10d77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  debugCurrentSpeed: 0
+  speed: 50
   angularVelocityMax: 100
 --- !u!135 &401913453948608981
 SphereCollider:
@@ -197,6 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938d2d5310a09884caaafd19b375b0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visual: {fileID: 0}
+  waterAbsorbAmount: 0.01
 --- !u!1 &401913455039398241
 GameObject:
   m_ObjectHideFlags: 0
